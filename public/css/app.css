@@ -89,4 +89,8 @@ body {
 	margin-bottom: 2em;
 }
 
+.jobs-list .job-item:nth-child(4n) {
+	clear: left;
+}
+
   
