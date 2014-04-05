@@ -31,17 +31,17 @@
 	<div class="container">
 		<div ng-controller="AppCtrl" class="ng-scope">
 			<div class="jumbotron user-form">
-				<form name="add-user">
+				<form name="add-user" ng-controller="JobController" ng-submit="createJob()">
 					<div class="form-group row">
 						<label for="dev-title" text="name">Job title</label>
-						<input type="text" id="dev-title" placeholder="your job title" class="form-control">
+						<input type="text" id="dev-title" placeholder="your job title" class="form-control" ng-model="job.headline">
 					</div>
 					<div class="form-group row">
 						<label for="dev-brief" text="name">Brief</label>
-						<textarea name="" id="dev-brief" placeholder="Brief info"></textarea>
+						<textarea name="" id="dev-brief" placeholder="Brief info" ng-model="job.body"></textarea>
 					</div>
 					<div class="row">
-						<button type="button" class="pull-left col-sm-2 btn btn-primary">Add profile</button>
+						<button type="submit" class="pull-left col-sm-2 btn btn-primary">Add profile</button>
 					</div>
 				</form>
 			</div>
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<footer class="hidden">
 			<div class="form-group">
 				<div class="col-sm-8 center-block">

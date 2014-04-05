@@ -8,14 +8,17 @@ function AppCtrl($scope, $http) {
     $scope.name = data.name;
   }).
   error(function(data, status, headers, config) {
-    $scope.name = 'Error!'
+    $scope.name = 'Error!';
   });
 }
 
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
-
-
-function MyCtrl2() {
+function JobController($scope, $http) {
+	$scope.job = {};
+    $scope.createJob = function() {
+        $http({
+            method : 'POST',
+            url : '/jobs',
+            data : $scope.job
+        });
+    };
 }
-MyCtrl2.$inject = [];
