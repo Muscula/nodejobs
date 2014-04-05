@@ -17,7 +17,7 @@
 			</button>
 			<a href="#" class="navbar-brand">NodeJobs</a>
 		</div>
-		<div class="collapse navbar-collapse navbar-ex1-collapse">
+		<div class="collapse navbar-collapse navbar-ex1-collapse hidden">
 			<ul class="nav navbar-nav">
 				<li>
 					<a href="view1">Add profile</a>
@@ -47,16 +47,18 @@
 							</div>
 						</form>
 					</div>
-					<div class="col-md-5 pull-right user-form-description hidden-md hidden-sm">
+					<div class="col-md-5 pull-right user-form-description visible-lg">
 						Fill out your job title and brief.
 					</div>
 				</div>
 			</div>
 			<div>
-				<p> There are {{jobs.length}} jobs</p>
+				<h3 class="jobs-count-title"> There are <span class="badge">{{jobs.length}}</span> jobs</h3>
 				<div ng-repeat='job in jobs'>
-					{{job.headline}}
-					{{job.body}}
+					<div class="col-xs-12 col-sm-6 col-md-4 job-deck">
+						<div class="job-title">{{job.headline}}</div>
+						<div class="job-body">{{job.body}}</div>
+					</div>
 				</div>
 			</div>
 			<div ng-view="" class="ng-scope">
