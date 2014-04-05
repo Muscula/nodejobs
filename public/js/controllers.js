@@ -3,16 +3,16 @@
 /* Controllers */
 
 function AppCtrl($scope, $http, $location) {
-	$http.get('/alljobs').success(function(jobs) {
-		$scope.jobs = jobs;
-	})
-	.error(function(data, status, headers, config) {
-		$scope.name = 'Error!';
-	});
-
-	$scope.go = function ( path ) {
-		$location.path(path);
+	$scope.getJobs = function () {
+		$http.get('/alljobs')
+		.success(function(jobs) {
+			$scope.jobs = jobs;
+		})
+		.error(function(data, status, headers, config) {
+			$scope.name = 'Error!';
+		});
 	};
+	$scope.getJobs();
 }
 
 function JobController($scope, $http) {
@@ -22,6 +22,8 @@ function JobController($scope, $http) {
 			method : 'POST',
 			url : '/jobs',
 			data : $scope.job
+		}).success(function(data, status, headers, config) {
+			$scope.getJobs();
 		});
 	};
 }
