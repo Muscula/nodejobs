@@ -15,7 +15,8 @@
     "express": "^3.5.1",
     "jade": "~0.31.2",
     "JSONStream": "^0.8.0",
-    "through2": "^0.4.1"
+    "through2": "^0.4.1",
+    "mongojs": "~0.11.0"
   },
   "scripts": {
     "test": "node ./test.js"
