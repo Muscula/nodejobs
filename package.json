@@ -12,7 +12,8 @@
     "node": ">=0.10.21"
   },
   "dependencies": {
-    "express": "^3.5.1"
+    "express": "^3.5.1",
+    "jade": "~0.31.2"
   },
   "scripts": {
     "test": "node ./test.js"
