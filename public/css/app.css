@@ -5,7 +5,6 @@ body {
 	font-family: 'Raleway', sans-serif;  
 }
 
-
 .navbar-default {
 	background: #2c3e50;
 	color: #fff;
@@ -25,6 +24,10 @@ body {
 .btn-primary {
 	background: #2c3e50;
 	border-color: #2c3e50;
+}
+
+.user-form textarea {
+	width: 100%;
 }
 
   

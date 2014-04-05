@@ -15,22 +15,35 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand">Brand</a>
+			<a href="#" class="navbar-brand">NodeJobs</a>
 		</div>
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="view1">View1</a>
+					<a href="view1">Add profile</a>
 				</li>
 				<li>
-					<a href="view2">View2 </a>
+					<a href="view2">Find developers</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<div class="container">
 		<div ng-controller="AppCtrl" class="ng-scope">
-			<div class="jumbotron"> <h1 class="ng-binding">Hello Bob</h1>
+			<div class="jumbotron user-form">
+				<form name="add-user">
+					<div class="form-group row">
+						<label for="dev-title" text="name">Job title</label>
+						<input type="text" id="dev-title" placeholder="your job title" class="form-control">
+					</div>
+					<div class="form-group row">
+						<label for="dev-brief" text="name">Brief</label>
+						<textarea name="" id="dev-brief" placeholder="Brief info"></textarea>
+					</div>
+					<div class="row">
+						<button type="button" class="pull-left col-sm-2 btn btn-primary">Add profile</button>
+					</div>
+				</form>
 			</div>
 			<div ng-view="" class="ng-scope">
 				<div class="row ng-scope">
@@ -39,7 +52,8 @@
 				</div>
 			</div>
 		</div>
-		<footer>
+		
+		<footer class="hidden">
 			<div class="form-group">
 				<div class="col-sm-8 center-block">
 					<input type="email" id="subscribeEmail" placeholder="Email" class="form-control pull-left">
