@@ -1,9 +1,14 @@
 <div class="jumbotron user-form animated fadeInDown">
 	<div class="signup">
 		<form  action="" method="POST" ng-submit="createUser()">
-			Your email:<br />
-			<input name="email" type="text" value="" size="30" ng-model="user.email"/>
-			<input type="submit" value="Sing up"/>
+			<label for="signup-email">Your email:</label>
+			<div class="row">
+				<div class="col-md-6">
+					<input name="email" id="signup-email" type="text" value="" class="form-control" size="	30" ng-model="user.email"/>
+				</div>
+				<div class="col-md-6">
+					<button type="submit" class="btn btn-primary" />Sing up</button>
+				</div>
 		</form>
 	</div>
 </div>

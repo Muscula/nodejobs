@@ -29,6 +29,10 @@ body {
 	border-color: #2c3e50;
 }
 
+.btn-primary {
+	vertical-align: top;
+}
+
 .user-form {
 	margin-top: 30px;
 	padding-bottom: 30px !important;
@@ -79,6 +83,10 @@ body {
 
 .job-deck .job-body {
 	padding: 0 1em;
+}
+
+.ng-scope .col-md-4 {
+	margin-bottom: 2em;
 }
 
   
