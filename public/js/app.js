@@ -7,7 +7,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives','
     $routeProvider.
       when('/', {
         //templateUrl: 'partials/index',
-        controller: JobController
+        //controller: JobController
       }).
       otherwise({
         redirectTo: '/'

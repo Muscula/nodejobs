@@ -3,9 +3,8 @@
 /* Controllers */
 
 function AppCtrl($scope, $http) {
-  $http({method: 'GET', url: '/api/name'}).
-  success(function(data, status, headers, config) {
-    $scope.name = data.name;
+  $http.get('/jobs').success(function(jobs) {
+    $scope.jobs = jobs;
   }).
   error(function(data, status, headers, config) {
     $scope.name = 'Error!';

@@ -52,6 +52,13 @@
 					</div>
 				</div>
 			</div>
+			<div>
+				<p> There are {{jobs.length}} jobs</p>
+				<div ng-repeat='job in jobs'>
+					{{job.headline}}
+					{{job.body}}
+				</div>
+			</div>
 			<div ng-view="" class="ng-scope">
 				<div class="row ng-scope">
 					<div class="col-lg-12"><p>This is the partial for view 1.</p>
