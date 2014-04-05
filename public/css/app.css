@@ -31,6 +31,7 @@ body {
 
 .user-form {
 	margin-top: 30px;
+	padding-bottom: 30px !important;
 }
 
 .user-form label {
@@ -50,13 +51,15 @@ body {
 }
 
 .jobs-count-title {
-	margin-bottom: 30px;
+	margin: 0 15px 30px;
 }
 
 .job-deck {
 	background: #eee;
 	padding-bottom: 1em;
-	margin: 0 1em 1em 0;
+	-webkit-box-shadow: 0px 2px 0px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 0px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 0px 0px rgba(50, 50, 50, 0.75);
 }
 
 .job-deck .job-title {

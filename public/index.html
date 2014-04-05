@@ -5,6 +5,7 @@
 	<title>Nodejobs</title>
 	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/animate.css">
 </head>
 <body>
 	<div role="navigation" class="navbar navbar-default navbar-fixed-top">
@@ -17,7 +18,7 @@
 			</button>
 			<a href="#" class="navbar-brand">NodeJobs</a>
 		</div>
-		<div class="collapse navbar-collapse navbar-ex1-collapse hidden">
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav">
 				<li>
 					<a href="view1">Add profile</a>
@@ -30,34 +31,30 @@
 	</div>
 	<div class="container">
 		<div ng-controller="AppCtrl" class="ng-scope">
-			<div class="jumbotron user-form">
+			<div class="jumbotron user-form animated fadeInDown">
 				<div class="row">
-					<div class="col-md-6">
-						<form name="add-user" ng-controller="JobController" ng-submit="createJob()">
-							<div class="form-group row">
-								<label for="dev-title" text="name">Job title</label>
-								<input type="text" id="dev-title" placeholder="your job title" class="form-control" ng-model="job.headline">
-							</div>
-							<div class="form-group row">
-								<label for="dev-brief" text="name">Brief</label>
-								<textarea name="" class="form-control" id="dev-brief" placeholder="Brief info" ng-model="job.body"></textarea>
-							</div>
-							<div class="row">
-								<button type="submit" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus"></i> Add profile</button>
-							</div>
-						</form>
-					</div>
-					<div class="col-md-5 pull-right user-form-description visible-lg">
-						Fill out your job title and brief.
-					</div>
+					<form name="add-user" ng-controller="JobController" ng-submit="createJob()">
+						<div class="form-group row">
+							<label for="dev-title" text="name">Add Profile</label>
+							<input type="text" id="dev-title" placeholder="Your position" class="form-control" ng-model="job.headline">
+						</div>
+						<div class="form-group row">
+							<textarea name="" class="form-control" id="dev-brief" placeholder="Tell about your work experience" ng-model="job.body"></textarea>
+						</div>
+						<div class="row">
+							<button type="submit" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus"></i> Add profile</button>
+						</div>
+					</form>
 				</div>
 			</div>
 			<div>
 				<h3 class="jobs-count-title"> There are <span class="badge">{{jobs.length}}</span> jobs</h3>
 				<div ng-repeat='job in jobs'>
-					<div class="col-xs-12 col-sm-6 col-md-4 job-deck">
-						<div class="job-title">{{job.headline}}</div>
-						<div class="job-body">{{job.body}}</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="job-deck">
+							<div class="job-title">{{job.headline}}</div>
+							<div class="job-body">{{job.body}}</div>
+						</div>
 					</div>
 				</div>
 			</div>
