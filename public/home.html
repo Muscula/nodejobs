@@ -1,0 +1,36 @@
+
+<div class="jumbotron user-form animated fadeInDown">
+	<div class="row">
+		<form name="add-user" ng-controller="JobController" ng-submit="createJob()">
+			<div class="form-group row">
+				<label for="dev-title" text="name">Add Profile</label>
+				<input type="text" id="dev-title" placeholder="Your position" class="form-control" ng-model="job.headline">
+			</div>
+			<div class="form-group row">
+				<textarea name="" class="form-control" id="dev-brief" placeholder="Tell about your work experience" ng-model="job.body"></textarea>
+			</div>
+			<div class="row">
+				<button type="submit" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus"></i> Add profile</button>
+			</div>
+		</form>
+	</div>
+</div>
+<div>
+	<h3 class="jobs-count-title"> There are <span class="badge">{{jobs.length}}</span> jobs</h3>
+	<div ng-repeat='job in jobs'>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="job-deck">
+				<div class="job-title">{{job.headline}}</div>
+				<div class="job-body">{{job.body}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="hidden">
+	<div class="form-group">
+		<div class="col-sm-8 center-block">
+			<input type="email" id="subscribeEmail" placeholder="Email" class="form-control pull-left">
+		</div>
+		<button type="button" class="pull-left col-sm-2 btn btn-primary">Subscribe</button>
+	</div>
+</footer>
