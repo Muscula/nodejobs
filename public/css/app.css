@@ -1,8 +1,30 @@
 /* app css stylesheet */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
 
 body {
-  padding-top:70px;
+	font-family: 'Raleway', sans-serif;  
 }
 
+
+.navbar-default {
+	background: #2c3e50;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.btn,
+.form-control {
+	border-radius: 0;
+}
+
+.btn-primary {
+	background: #2c3e50;
+	border-color: #2c3e50;
+}
 
   

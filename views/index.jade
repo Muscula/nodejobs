@@ -8,23 +8,27 @@ block body
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href="#") Brand
+      a.navbar-brand(href="#") NodeJobs
     
     .collapse.navbar-collapse.navbar-ex1-collapse
       ul.nav.navbar-nav
         li
-          a(href="view1") View1
+          a(href="view1") App profile
         li  
-          a(href="view2") View2 
+          a(href="view2") Find developer 
   .container      
     div(ng-controller='AppCtrl')
       .jumbotron  
         h1 Hello {{name}}
       div(ng-view)
     hr  
-    div
-      | Angular seed app: v
-      span(app-version)
+    footer
+      div.form-group
+        label.col-sm-2.control-label(for="subscribeEmail") Add your mail
+        div.col-sm-10
+          div.col-sm-8
+            input.form-control.pull-left(type="email",id="subscribeEmail",placeholder="Email")
+          button.pull-left.col-sm-2.btn.btn-primary(type="button") Subscribe
 
   script(src='js/lib/angular/angular.js')
   script(src='js/lib/angular/angular-route.js')
