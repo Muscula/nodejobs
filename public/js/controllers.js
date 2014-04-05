@@ -6,7 +6,7 @@ function AppCtrl($scope, $http, $location) {
 	$scope.getJobs = function () {
 		$http.get('/alljobs')
 		.success(function(jobs) {
-			$scope.jobs = jobs;
+			$scope.jobs = jobs.reverse();
 		})
 		.error(function(data, status, headers, config) {
 			$scope.name = 'Error!';
