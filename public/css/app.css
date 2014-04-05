@@ -89,8 +89,9 @@ body {
 	margin-bottom: 2em;
 }
 
-.jobs-list .job-item:nth-child(4n) {
+.jobs-list .job-item:nth-child(3n+1) {
 	clear: left;
+}
 }
 
   
