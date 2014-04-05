@@ -10,8 +10,8 @@ module.exports = {
 		http:400
 	},
 	"propertyMalformed":{
-		message:'The property "%s" with the value "%s" is malformed.',
-		args:['propertyName', 'propertyValue'],
+		message:'The property "%s" is malformed.',
+		args:['propertyName'],
 		http:400
 	},
 	"unAuthorized":{
