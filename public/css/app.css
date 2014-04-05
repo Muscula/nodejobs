@@ -54,12 +54,20 @@ body {
 	margin: 0 15px 30px;
 }
 
+.jobs-item .col-md-4 {
+	margin-bottom: 2em;
+} 
+
 .job-deck {
-	background: #eee;
+	background: rgba(238,238,238,.5);
 	padding-bottom: 1em;
 	-webkit-box-shadow: 0px 2px 0px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 2px 0px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 2px 0px 0px rgba(50, 50, 50, 0.75);
+}
+
+.job-deck:hover {
+	background: rgba(238,238,238,.7);
 }
 
 .job-deck .job-title {
