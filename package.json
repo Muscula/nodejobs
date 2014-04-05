@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Muscula/nodebase"
+    "url": "https://github.com/Muscula/nodejobs"
   },
   "private": false,
   "main": "./lib/app.js",
@@ -28,18 +28,17 @@
     "sinon-chai": "",
     "mocha-jshint": ""
   },
-  "description": "nodebase\r --------\r This is my boilerplate for when I start a new `node.js` project. I copy this repository and start from there.",
+  "description": "Nodejobs",
   "bugs": {
-    "url": "https://github.com/Muscula/nodebase/issues"
+    "url": "https://github.com/Muscula/nodejobs/issues"
   },
   "directories": {
     "test": "test"
   },
   "keywords": [
-    "boilerplate",
     "node",
-    "project"
+    "jobs"
   ],
   "license": "Apache2",
-  "homepage": "https://github.com/Muscula/nodebase"
+  "homepage": "https://github.com/Muscula/nodejobs"
 }
