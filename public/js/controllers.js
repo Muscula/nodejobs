@@ -3,7 +3,7 @@
 /* Controllers */
 
 function AppCtrl($scope, $http, $location) {
-	$http.get('/jobs').success(function(jobs) {
+	$http.get('/alljobs').success(function(jobs) {
 		$scope.jobs = jobs;
 	})
 	.error(function(data, status, headers, config) {
