@@ -26,8 +26,24 @@ body {
 	border-color: #2c3e50;
 }
 
-.user-form textarea {
-	width: 100%;
+.user-form {
+	margin-top: 30px;
+}
+
+.user-form label {
+	background: #89c21a;
+	font-size: 14px;
+	line-height: 26px;
+	color: #fff;
+	padding: 0 15px;
+	text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+.user-form-description {
+	font-size: 14px;
+	border-left: 1px solid #ccc;
+	padding: 0 0 0 20px;
+	min-height: 250px;
 }
 
   

@@ -31,19 +31,26 @@
 	<div class="container">
 		<div ng-controller="AppCtrl" class="ng-scope">
 			<div class="jumbotron user-form">
-				<form name="add-user" ng-controller="JobController" ng-submit="createJob()">
-					<div class="form-group row">
-						<label for="dev-title" text="name">Job title</label>
-						<input type="text" id="dev-title" placeholder="your job title" class="form-control" ng-model="job.headline">
+				<div class="row">
+					<div class="col-md-6">
+						<form name="add-user" ng-controller="JobController" ng-submit="createJob()">
+							<div class="form-group row">
+								<label for="dev-title" text="name">Job title</label>
+								<input type="text" id="dev-title" placeholder="your job title" class="form-control" ng-model="job.headline">
+							</div>
+							<div class="form-group row">
+								<label for="dev-brief" text="name">Brief</label>
+								<textarea name="" class="form-control" id="dev-brief" placeholder="Brief info" ng-model="job.body"></textarea>
+							</div>
+							<div class="row">
+								<button type="submit" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus"></i> Add profile</button>
+							</div>
+						</form>
 					</div>
-					<div class="form-group row">
-						<label for="dev-brief" text="name">Brief</label>
-						<textarea name="" id="dev-brief" placeholder="Brief info" ng-model="job.body"></textarea>
+					<div class="col-md-5 pull-right user-form-description hidden-md hidden-sm">
+						Fill out your job title and brief.
 					</div>
-					<div class="row">
-						<button type="submit" class="pull-left col-sm-2 btn btn-primary">Add profile</button>
-					</div>
-				</form>
+				</div>
 			</div>
 			<div ng-view="" class="ng-scope">
 				<div class="row ng-scope">
