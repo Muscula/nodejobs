@@ -35,5 +35,6 @@
 	"sub": false,
 	"trailing" : true,
 	"undef": true,
-	"unused": "vars"
+	"unused": "vars",
+	"esnext":true
 }
